@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="anch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#chooseFile" text="Choose torrent" AnchorPane.leftAnchor="15.0" />
+      <ScrollPane layoutX="250.0" prefViewportHeight="377.0" prefViewportWidth="330.0">
+         <content>
+            <AnchorPane fx:id="downloadList" layoutX="289.0" layoutY="14.0" prefHeight="377.0" prefWidth="330.0" style="-fx-background-color: #F5F5DC;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="11.0" layoutY="90.0" mnemonicParsing="false" onAction="#chooseDir" text="Choose directory" AnchorPane.leftAnchor="15.0" />
+      <Label fx:id="torPath" layoutX="14.0" layoutY="36.0" maxWidth="250.0" text="Path to torrent:" wrapText="true" AnchorPane.leftAnchor="0.0" />
+      <Label fx:id="dirPath" layoutX="11.0" layoutY="112.0" maxWidth="250.0" text="Download directory:" wrapText="true" AnchorPane.leftAnchor="0.0" />
+      <Button layoutX="15.0" layoutY="167.0" mnemonicParsing="false" onAction="#download" text="Download" AnchorPane.leftAnchor="15.0" />
+   </children>
+</AnchorPane>
